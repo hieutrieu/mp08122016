@@ -26,7 +26,7 @@
      </div>
 </section>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="navbar-top-menu">
      <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -106,7 +106,7 @@
                               thành lập theo Giấy chứng nhận đăng ký kinh doanh do Sở Kế hoạch
                               và Đầu tư Hà Nội cấp ngày 24/08/2010. </p>
                     </div>
-                    <p style="text-align: center"><a class="btn read" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
+                    <p style="text-align: center"><a class="btn read hvr-sweep-to-bottom" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
                </div>
                <div class="col-md-6 col-xs-12">
                     <div class="about-img">
@@ -122,7 +122,7 @@
                          thành lập theo Giấy chứng nhận đăng ký kinh doanh do Sở Kế hoạch
                          và Đầu tư Hà Nội cấp ngày 24/08/2010. </p>
 
-                    <p style="text-align: center"><a class="btn read" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
+                    <p style="text-align: center"><a class="btn read hvr-sweep-to-bottom" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
                </div>
           </div>
 
@@ -146,7 +146,7 @@
                               thành lập theo Giấy chứng nhận đăng ký kinh doanh do Sở Kế hoạch
                               và Đầu tư Hà Nội cấp ngày 24/08/2010. </p>
                     </div>
-                    <p style="text-align: center"><a class="btn read" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
+                    <p style="text-align: center"><a class="btn read hvr-sweep-to-bottom" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
                </div>
                <div class="col-md-6 col-xs-12">
                     <div class="about-img">
@@ -162,7 +162,7 @@
                          thành lập theo Giấy chứng nhận đăng ký kinh doanh do Sở Kế hoạch
                          và Đầu tư Hà Nội cấp ngày 24/08/2010. </p>
 
-                    <p style="text-align: center"><a class="btn read" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
+                    <p style="text-align: center"><a class="btn read hvr-sweep-to-bottom" href="cong-ty-thanh-vien.html">Xem thêm</a></p>
                </div>
           </div>
 
@@ -193,7 +193,7 @@
           <div class="container">
                <ul class="nav navbar-nav ">
                     <li><a href="#">TRANG CHỦ</a></li>
-                    <li><a href="#">GIỚI THIỆU</a></li>
+                    <li><a href="lich-su-phat-trien.html" class="menu-active">GIỚI THIỆU</a></li>
                     <li><a href="#">LĨNH VỰC</a></li>
                     <li><a href="#">DỰ ÁN</a></li>
                     <li><a href="#">TIN TỨC</a></li>
@@ -219,22 +219,8 @@
      </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/jquery-2.1.4.min.js"></script>
 <script src="../js/jquery.carouFredSel-6.2.1.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script>
-     var marquee = $('p.marquee');
-     marquee.each(function() {
-          var mar = $(this),indent = mar.width();
-          mar.marquee = function() {
-               indent--;
-               mar.css('text-indent',indent);
-               if (indent < -1 * mar.children('div.marquee-text').width()) {
-                    indent = mar.width();
-               }
-          };
-          mar.data('interval',setInterval(mar.marquee,1000/60));
-     });
-</script>
+<script src="../js/app.js"></script>
 </body>
 </html>

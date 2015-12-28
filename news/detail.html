@@ -257,45 +257,9 @@
      </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="../js/jquery-2.1.4.min.js"></script>
 <script src="../js/jquery.carouFredSel-6.2.1.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-     $( document ).ready( function () {
-          // Using default configuration
-          $( '#carousel' ).carouFredSel();
-          // Using custom configuration
-          $( '#carousel' ).carouFredSel( {
-               items : 1,
-               direction : "left",
-               scroll : {
-                    items : 1,
-                    duration : 1000,
-                    pauseOnHover : true
-               },
-               prev : {
-                    button : ".prev",
-                    key : "left"
-               },
-               next : {
-                    button : ".next",
-                    key : "right"
-               }
-          } );
-     } );
-     var marquee = $('p.marquee');
-     marquee.each(function() {
-          var mar = $(this),indent = mar.width();
-          mar.marquee = function() {
-               indent--;
-               mar.css('text-indent',indent);
-               if (indent < -1 * mar.children('div.marquee-text').width()) {
-                    indent = mar.width();
-               }
-          };
-          mar.data('interval',setInterval(mar.marquee,1000/60));
-     });
-</script>
+<script src="../js/app.js"></script>
 </body>
 </html>

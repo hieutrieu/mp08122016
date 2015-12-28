@@ -26,12 +26,12 @@
      </div>
 </section>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="navbar-top-menu">
      <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">&nbsp;</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -42,7 +42,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <form class="navbar-form  navbar-right" role="search">
                     <div class="form-group menu-search">
-                         <input type="text" class="form-control" placeholder="Tìm kiếm">
+                         <input type="text" class="form-control" id="txt_search" placeholder="Tìm kiếm">
                     </div>
                     <button type="submit" class="btn btn-search"><i class="glyphicon glyphicon-search"></i></button>
                </form>
@@ -108,7 +108,7 @@
           <div class="header">
                <h3>Lĩnh vực kinh doanh</h3>
 
-               <p>Với mong muốn đem đến cho thị trường những sản phẩm - dịch vụ theo tiêu chuẩn quốc tế và những trải nghiệm hoàn toàn mới về phong
+               <p>Với mong muốn đem đến cho thị trường những sản phẩm <br>dịch vụ theo tiêu chuẩn quốc tế và những trải nghiệm hoàn toàn mới về phong
                     cách sống hiện đại</p>
           </div>
 
@@ -146,7 +146,7 @@
                     </div>
                </div>
           </div>
-          <div class="bottom"><a class="btn readmore">Xem Thêm</a></div>
+          <div class="bottom"><a class="btn readmore  hvr-sweep-to-bottom">Xem Thêm</a></div>
 
 
      </div>
@@ -157,7 +157,7 @@
           <div class="header">
                <h3>Dự án tiêu biểu</h3>
 
-               <p>Khu văn phòng cao cấp tại 183 Nguyễn Lương Bằng với phong cách kiến trúc độc đáo ấn tượng sẽ không chỉ đem đến một không gian làm
+               <p>Khu văn phòng cao cấp tại 183 Nguyễn Lương Bằng với phong cách <br>kiến trúc độc đáo ấn tượng sẽ không chỉ đem đến một không gian làm
                     việc hiện đại </p>
           </div>
 
@@ -193,7 +193,7 @@
                     </div>
                </div>
           </div>
-          <div class="bottom"><a class="btn readmore">Xem Thêm</a></div>
+          <div class="bottom"><a class="btn readmore hvr-sweep-to-bottom">Xem Thêm</a></div>
      </div>
 </section>
 
@@ -202,7 +202,7 @@
           <div class="header">
                <h3>TIN TỨC SỰ KIỆN</h3>
 
-               <p>Cập nhật những thông tin mới nhất về chúng tôi,thị trường bất động sản,xăng dầu. </p>
+               <p>Cập nhật những thông tin mới nhất về chúng tôi, thị trường bất động sản, xăng dầu. </p>
           </div>
 
           <div class="row">
@@ -227,7 +227,7 @@
                               <p>Lễ ký kết thỏa thuận hợp tác chiến lược giữa cty cp hóa dầu quân đội và tập đoàn Auchan - Pháp</p>
                          </div>
                     </div>
-                    <a class="btn readmore">Xem Thêm</a>
+                    <a href="#" class="readmore">Xem Thêm</a>
                </div>
                <div class="col-lg-4 col-md-4 col-xs-12">
                     <h4>GIÁ XĂNG DẦU BÁN LẺ</h4>
@@ -281,17 +281,14 @@
           <div class="slide">
                <div class="next"><i class="glyphicon glyphicon-chevron-left"></i></div>
                <div class="prev"><i class="glyphicon glyphicon-chevron-right"></i></div>
-               <div id="carousel">
-
-                    <img src="image/1.png" width="300" />
-                    <img src="image/2.png" width="300" />
-                    <img src="image/3.png" width="300" />
-
-
-                    <img src="image/1.png" width="300" />
-                    <img src="image/2.png" width="300" />
-                    <img src="image/3.png" width="300" />
-               </div>
+               <ul id="carousel">
+                    <li><img class="img-responsive" src="image/1.png"/></li>
+                    <li><img class="img-responsive" src="image/2.png"/></li>
+                    <li><img class="img-responsive" src="image/3.png"/></li>
+                    <li><img class="img-responsive" src="image/1.png"/></li>
+                    <li><img class="img-responsive" src="image/2.png"/></li>
+                    <li><img class="img-responsive" src="image/3.png"/></li>
+               </ul>
           </div>
 
 
@@ -310,7 +307,7 @@
      <div class="content">
           <div class="container">
                <ul class="nav navbar-nav ">
-                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="index.html" class="menu-active">TRANG CHỦ</a></li>
                     <li><a href="about/lich-su-phat-trien.html">GIỚI THIỆU</a></li>
                     <li><a href="#">LĨNH VỰC</a></li>
                     <li><a href="#">DỰ ÁN</a></li>
@@ -335,45 +332,15 @@
      </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/jquery.carouFredSel-6.2.1.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/carouFredSel/jquery.carouFredSel-6.2.1-packed.js"></script>
 
-<script type="text/javascript">
-     $( document ).ready( function () {
-          // Using default configuration
-          $( '#carousel' ).carouFredSel();
-          // Using custom configuration
-          $( '#carousel' ).carouFredSel({
-               items : 1,
-               direction : "left",
-               scroll : {
-                    items : 1,
-                    duration : 1000,
-                    pauseOnHover : true
-               },
-               prev : {
-                    button : ".prev",
-                    key : "left"
-               },
-               next : {
-                    button : ".next",
-                    key : "right"
-               }
-          });
-     });
-     var marquee = $('p.marquee');
-     marquee.each(function() {
-          var mar = $(this),indent = mar.width();
-          mar.marquee = function() {
-               indent--;
-               mar.css('text-indent',indent);
-               if (indent < -1 * mar.children('div.marquee-text').width()) {
-                    indent = mar.width();
-               }
-          };
-          mar.data('interval',setInterval(mar.marquee,1000/60));
-     });
-</script>
+<!-- optionally include helper plugins -->
+<script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.transit.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/carouFredSel/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
