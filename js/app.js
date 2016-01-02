@@ -5,7 +5,7 @@
             ($(window).scrollTop() > navHeight) ? $('#navbar-top-menu').addClass('navbar-fixed-top') : $('#navbar-top-menu').removeClass('navbar-fixed-top');
             $('#navbar-top-menu').css('display: block; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)');
         });
-        if(typeof $('#carousel') !== 'undefined') {
+        if($('#carousel').length > 0) {
             $('#carousel').carouFredSel({
                 prev: {
                     button: ".prev",

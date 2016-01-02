@@ -103,6 +103,17 @@ input.form-control {
 .btn.btn-mipec:before {
     background: #296347;
 }
+.btn-mipec-o {
+    background: #e1e1e1;
+    border: 1px solid #808080;
+    color: #000000;
+}
+.btn.btn-mipec-o:hover {
+    background: #296347;
+    border: 1px solid #1b432f!important;
+    color: #FFFFFF!important;
+}
+
 .navbar-default li.menu-search i {
     cursor: pointer;
 }
@@ -208,20 +219,26 @@ a:focus, a:hover {
     font-size: 24px;
 }
 .header-title {
+    background: #FFFFFF;
+    position: relative;
     font-size: 20px;
     color: #296347;
-    padding: 40px 0;
     font-weight: bold;
+    z-index: 1;
+}
+.header-container {
+    padding: 40px 0;
+    background: #FFFFFF;
 }
 .header-title:after {
     content:"";
     position:absolute;
     z-index:-1;
-    -webkit-box-shadow:0 0 40px rgba(0,0,0,0.8);
-    box-shadow:0 0 40px rgba(0,0,0,0.8);
-    bottom:0px;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.5);
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    bottom:1px;
     width:80%;
-    height:50%;
+    height:60%;
     -moz-border-radius:100%;
     border-radius:100%;
     left:10%;
@@ -242,8 +259,6 @@ a:focus, a:hover {
 }
 
 .business .img img, .typical .img img, .news .img img {
-    height: 320px;
-    max-height: 320px;
     width: 100%;
     position: relative;
     cursor: pointer;
@@ -267,7 +282,7 @@ a:focus, a:hover {
     border-radius: 0;
     margin: 40px auto;
     text-transform: uppercase;
-    color: white;
+    color: #000000;
     font-weight: bold;
     box-shadow: 0px 6px 10px 0px #666;
 }
@@ -573,14 +588,16 @@ a:focus, a:hover {
 }
 .about-content{
     min-height: 500px;
+    border-bottom: 1px solid #b7b7b7;
+    padding-bottom: 50px;
 }
 .active-sub{
     border: 1px solid #ffc000 !important;
     color: #ffc000 !important;
 }
 a.btn:hover{
-    border-color: #ed3338 !important;
-    color: #ed3338 !important;
+    border-color: #ffc000 !important;
+    color: #ffc000 !important;
 }
 .page-news a.btn{
     border: none;
@@ -668,7 +685,6 @@ a.btn:hover{
 .about-img{position: relative}
 .about-img img{
     width: 100%;
-    height: 250px;
 }
 .bg{
     background: #e6e6e6;
@@ -704,7 +720,7 @@ a.btn:hover{
     color: #296347!important;
 }
 a.btn.read.hvr-sweep-to-bottom:hover {
-    border: 1px solid #296347!important;
+    border: 1px solid #e1e1e1!important;
     color: #ffffff!important;
 }
 a.btn.read.hvr-sweep-to-bottom:before {
@@ -725,19 +741,19 @@ a.btn.read.hvr-sweep-to-bottom:before {
     text-decoration: none;
     background-color: #fff !important;
 }
-.date{
+.news_date{
     width: 85px;
     height: 80px;
     position: absolute;
-    background: #005b7f;
+    background: #e1e1e1;
     bottom: -30px;
     left: 40%;
     z-index: 99999;
 }
-.date .line{
+.news_date .line{
     position: absolute;
     height: 1px;
-    background: white;
+    background: black;
     width: 100%;
     transform: rotate(136deg);
     top: 40px;
@@ -745,23 +761,30 @@ a.btn.read.hvr-sweep-to-bottom:before {
     right: -84px;
     z-index: 99999;
 }
-.date .day{
-    color: white;
+.news_date .day{
+    color: black;
     font-size: 20px;
     font-weight: bold;
     padding: 14px 16px;
     display: block;
  }
-.date .moth{
-    color: white;
+.news_date .moth{
+    color: black;
     font-size: 18px;
     padding: 2px 46px;
     display: block;
     margin-top: -13px;
 }
 
-.about-img:hover .date{
-    background: #56b596;
+.about-img:hover .moth,
+.about-img:hover .day {
+    color: white;
+}
+.about-img:hover .line {
+    background: white;
+}
+.about-img:hover .news_date{
+    background: #296347;
 }
 .dates{
     width: 80px;
@@ -784,13 +807,12 @@ a.btn.read.hvr-sweep-to-bottom:before {
 }
 /* Sweep To Bottom */
 a.btn.hvr-sweep-to-bottom {
-    border-color: #296347!important;
-    background: #296347;
+    border-color: #787979!important;
+    background: #e1e1e1;
     font-weight: normal;
     -webkit-box-shadow: 0px 10px 15px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 15px -8px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 15px -8px rgba(0,0,0,0.75);
-    color: white!important;
 }
 .hvr-sweep-to-bottom {
     display: inline-block;
@@ -816,7 +838,7 @@ a.btn.hvr-sweep-to-bottom {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #ed3338!important;
+    background: #296347!important;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 0;
