@@ -1032,16 +1032,9 @@ li.dropdown-submenu > .dropdown-menu {
 }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover,
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-    color: #FFFFFF;
     text-decoration: none;
-    background: rgba(237,11,19,1);
-    background: -moz-linear-gradient(left, rgba(237,11,19,1) 0%, rgba(186,54,58,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,11,19,1)), color-stop(100%, rgba(186,54,58,1)));
-    background: -webkit-linear-gradient(left, rgba(237,11,19,1) 0%, rgba(186,54,58,1) 100%);
-    background: -o-linear-gradient(left, rgba(237,11,19,1) 0%, rgba(186,54,58,1) 100%);
-    background: -ms-linear-gradient(left, rgba(237,11,19,1) 0%, rgba(186,54,58,1) 100%);
-    background: linear-gradient(to right, rgba(237,11,19,1) 0%, rgba(186,54,58,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed0b13', endColorstr='#ba363a', GradientType=1 );
+    background: transparent;
+    color: #ffc000;
 }
 .menu_square {
     float: left;
