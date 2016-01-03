@@ -25,6 +25,7 @@
         }
         handleSearch();
         autoPlayYouTubeModal();
+        handleGoogleMap();
     });
 })(jQuery);
 var handleSearch = function() {
@@ -60,6 +61,38 @@ var handleSearch = function() {
         });
     }
 }
+var handleGoogleMap = function() {
+    if($('#google_map').length > 0) {
+        var myMarkers = {
+            "markers": [{
+                "latitude": "21.02148",		// latitude
+                "longitude": "105.860529",		// longitude
+                "icon"     : "../img/marker_1.png"	// Pin icon
+            }]
+        };
+
+        $("#google_map").mapmarker({
+            zoom: 16,							// Zoom
+            center: "21.02148,105.860529",		// Center of map
+            type: "ROADMAP",					// Map Type
+            controls: "HORIZONTAL_BAR",			// Controls style
+            dragging: true,							// Allow dragging?
+            mousewheel: true,	// Allow zooming with mousewheel
+            markers: myMarkers, styling: 0,							// Bool - do you want to style the map?
+            featureType: "all",
+            visibility: "on",
+            elementType: "geometry",
+            hue: "#00AAFF",
+            saturation: -100,
+            lightness: 0,
+            gamma: 1,
+            navigation_control: 0
+            /*
+             To play with the map colors and styles you can try this tool right here http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
+             */
+        });
+    }
+}
 function autoPlayYouTubeModal(){
     var trigger = $("body").find('[data-toggle="modal"]');
     trigger.click(function() {
@@ -77,6 +110,7 @@ function autoPlayYouTubeModal(){
         })
     });
 }
+
 var marquee = $('p.marquee');
 marquee.each(function() {
     var mar = $(this),indent = mar.width();
