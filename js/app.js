@@ -24,8 +24,7 @@
             });
         }
         handleSearch();
-        autoPlayYouTubeModal();
-        handleGoogleMap();
+        handleGoogleMap('google_map');
     });
 })(jQuery);
 var handleSearch = function() {
@@ -61,8 +60,8 @@ var handleSearch = function() {
         });
     }
 }
-var handleGoogleMap = function() {
-    if($('#google_map').length > 0) {
+var handleGoogleMap = function(id) {
+    if($('#'+id).length > 0) {
         var myMarkers = {
             "markers": [{
                 "latitude": "21.02148",		// latitude
@@ -71,7 +70,7 @@ var handleGoogleMap = function() {
             }]
         };
 
-        $("#google_map").mapmarker({
+        $("#"+id).mapmarker({
             zoom: 16,							// Zoom
             center: "21.02148,105.860529",		// Center of map
             type: "ROADMAP",					// Map Type
@@ -110,7 +109,13 @@ function autoPlayYouTubeModal(){
         })
     });
 }
-
+var hideLocationMap = function(elm) {
+    $('#'+elm).fadeOut();
+}
+var showLocationMap = function(elm){
+    $('.google_map_location').hide();
+    $('#'+elm).fadeIn();
+}
 var marquee = $('p.marquee');
 marquee.each(function() {
     var mar = $(this),indent = mar.width();

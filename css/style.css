@@ -3,6 +3,7 @@ body, html {
 }
 .container {
     max-width: 970px;
+    position: relative;
 }
 
 .top-nemu {
@@ -213,6 +214,14 @@ a:focus, a:hover {
     text-align: center;
 }
 
+.header-title .no-style {
+    color: #000000;
+    border-right: 1px solid #000000;
+    padding-right: 15px;
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 20px;
+}
 .head-title {
     text-transform: uppercase;
     color: #296347;
@@ -602,7 +611,7 @@ a:focus, a:hover {
     padding-bottom: 10px;
     margin-top: 50px;
 }
-.about-content .img-content{position: relative;margin: 30px 0 30px;}
+.img-content{position: relative;margin: 30px 0 30px;}
 .img-content img{width: 100%;max-height: 490px}
 .img-content h3{
     position: absolute;
@@ -622,6 +631,7 @@ a:focus, a:hover {
     padding-bottom: 50px;
 }
 .main-content{
+    position: relative;
     border-bottom: 1px solid #b7b7b7;
 }
 .active-sub{
@@ -661,6 +671,9 @@ a.btn:hover{
 .mt-20 {
     margin-top: 20px;
 }
+.mt-30 {
+    margin-top: 30px;
+}
 .mt-40 {
     margin-top: 40px;
 }
@@ -681,9 +694,20 @@ a.btn:hover{
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.p30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.p20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .p50 {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.pt50 {
+    padding-top: 50px;
 }
 .w47 {
     width: 47%;
@@ -1171,22 +1195,19 @@ li.dropdown-submenu > .dropdown-menu {
     font-size: 24px;
 }
 
-#mapModal,
 #videoModal {
     z-index: 9999;
 }
 .modal-backdrop.in {
     opacity: 0.9;
 }
-#mapModal .modal-dialog {
-    width: 100%;
-}
 #videoModal .modal-dialog {
     width: 900px;
 }
-#mapModal .modal-dialog .modal-content,
 #videoModal .modal-dialog .modal-content {
     border-radius: 0;
+    box-shadow: none;
+    border: none;
 }
 .page-title {
     font-size: 16px;
@@ -1206,9 +1227,36 @@ li.dropdown-submenu > .dropdown-menu {
     font-weight: bold;
     margin: 10px 0 20px 0;
 }
+.img-caption-gallery {
+    margin: 10px 0 20px 0;
+    text-transform: uppercase;
+}
 #google_map {
     height: 400px;
     width: 100%;
+}
+.google_map_location {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    bottom: -100px;
+    right: 0;
+    display: none;
+}
+.map_close {
+    background: #296347;
+    position: absolute;
+    z-index: 9999;
+    padding: 5px 10px;
+    -webkit-box-shadow: -8px 8px 12px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 8px 12px 0px rgba(0,0,0,0.75);
+    box-shadow: -8px 8px 12px 0px rgba(0,0,0,0.75);
+    right: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.map_close:hover {
+    color: #ffc000;
 }
 .contact-title {
     font-size: 16px;
@@ -1304,4 +1352,34 @@ a.link_investor_p:hover {
 
 a.link_investor_p:hover .icon_investor_p {
     background: url("../img/icon_investor_p_hover.png") bottom center no-repeat;
+}
+
+.project_title {
+    text-transform: uppercase;
+    color: #296347;
+    font-weight: bold;
+    font-size: 15px;
+    border-left: 1px solid #296347;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.project_body {
+    padding: 10px;
+}
+.project_confirm {
+    border-top: 1px solid #bfbfbf;
+    max-width: 60%;
+    margin: auto;
+}
+.project_confirm_title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.project_confirm_address {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.slider img {
+    width: 100%;
 }
