@@ -59,7 +59,7 @@ body, html {
     background: white;
     border: none;
     margin: 0;
-    z-index: 999999;
+    z-index: 9999;
 }
 .navbar-bg {
     background: #296347;
@@ -264,12 +264,36 @@ a:focus, a:hover {
     cursor: pointer;
 }
 
-.business .img .mask i, .typical .img .mask i,.about-img .mask i {
+.business .img .mask i, .typical .img .mask i{
     color: white;
     position: absolute;
-    top: 45%;
-    left: 45%;
-    font-size: 30px;
+    top: 42%;
+    left: 42%;
+    font-size: 50px;
+}
+.fade-preview .mask {
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    visibility: hidden;
+    background-color: rgba(0,0,0, 0.5);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.fade-preview .mask i {
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 80px;
 }
 
 .business .row h3 {
@@ -385,7 +409,7 @@ a:focus, a:hover {
     text-align: left;
 }
 
-.news .img:hover .bottom, .business .img:hover .mask, .typical .img:hover .mask,.about-img:hover .mask {
+.news .img:hover .bottom, .business .img:hover .mask, .typical .img:hover .mask,.fade-preview:hover .mask {
     visibility: visible;
     opacity: 1;
     cursor: pointer;
@@ -619,6 +643,9 @@ a.btn:hover{
 .no-pading{
     padding: 0;
 }
+.mt-20 {
+    margin-top: 20px;
+}
 .media-object{
     width: 90px;
     height: 90px;
@@ -682,8 +709,8 @@ a.btn:hover{
     left: 100%;
     margin-left: 15px;
 }
-.about-img{position: relative}
-.about-img img{
+.fade-preview{position: relative}
+.fade-preview img{
     width: 100%;
 }
 .bg{
@@ -776,14 +803,14 @@ a.btn.read.hvr-sweep-to-bottom:before {
     margin-top: -13px;
 }
 
-.about-img:hover .moth,
-.about-img:hover .day {
+.fade-preview:hover .moth,
+.fade-preview:hover .day {
     color: white;
 }
-.about-img:hover .line {
+.fade-preview:hover .line {
     background: white;
 }
-.about-img:hover .news_date{
+.fade-preview:hover .news_date{
     background: #296347;
 }
 .dates{
@@ -797,7 +824,7 @@ a.btn.read.hvr-sweep-to-bottom:before {
     font-size: 16px;
     margin-bottom: 20px;
 }
-.v .about-img{
+.v .fade-preview{
     margin-bottom: 30px;
 }
 #txt_search {
@@ -1081,4 +1108,17 @@ li.dropdown-submenu > .dropdown-menu {
 }
 .fa-home {
     font-size: 24px;
+}
+
+#videoModal {
+    z-index: 9999;
+}
+.modal-backdrop.in {
+    opacity: 0.9;
+}
+#videoModal .modal-dialog {
+    width: 900px;
+}
+#videoModal .modal-dialog .modal-content {
+    border-radius: 0;
 }

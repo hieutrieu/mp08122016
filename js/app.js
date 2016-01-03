@@ -24,6 +24,7 @@
             });
         }
         handleSearch();
+        autoPlayYouTubeModal();
     });
 })(jQuery);
 var handleSearch = function() {
@@ -58,6 +59,23 @@ var handleSearch = function() {
             }
         });
     }
+}
+function autoPlayYouTubeModal(){
+    var trigger = $("body").find('[data-toggle="modal"]');
+    trigger.click(function() {
+        var theModal = $(this).data( "target" ),
+            videoSRC = $(this).attr( "data-theVideo" ),
+            videoTitle = $(this).data( "title" ),
+            videoSRCauto = videoSRC+"?autoplay=1" ;
+        $(theModal).find('.modal-header>.modal-title').html(videoTitle);
+        $(theModal+' iframe').attr('src', videoSRCauto);
+        $(theModal+' button.close').click(function () {
+            $(theModal+' iframe').attr('src', videoSRC);
+        });
+        $(theModal).on('hidden.bs.modal', function () {
+            $(theModal+' iframe').removeAttr('src');
+        })
+    });
 }
 var marquee = $('p.marquee');
 marquee.each(function() {
