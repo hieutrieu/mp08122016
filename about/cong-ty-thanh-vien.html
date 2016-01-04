@@ -1,145 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Giới thiệu</title>
-
-     <link href="../css/bootstrap.min.css" rel="stylesheet">
-     <link href="../css/style.css" rel="stylesheet">
-
-     <!--[if lt IE 9]>
-     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-     <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trang chủ</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../fonts/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 <body>
 <section class="top-nemu">
-     <div class="container top">
-          <ul class="navbar-right">
-               <li><a href="#"><img src="../image/us.gif" /></a></li>
-               <li><a href="#"><img src="../image/vn.gif" /></a></li>
-               <li><a href="#"><img src="../image/sosial.png" /></a></li>
-
-          </ul>
-     </div>
+    <div class="container top">
+        <ul class="navbar-right">
+            <li><a href="#"><i class="fa fa-facebook"></i> </a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i> </a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
+            <li><a href="#"><i class="fa fa-pinterest"></i> </a></li>
+            <li><a href="#"><i class="fa fa-feed"></i> </a></li>
+            <li class="languages"><a href="#"><img src="../img/us.gif"/></a></li>
+            <li><a href="#"><img src="../img/vn.gif"/></a></li>
+        </ul>
+    </div>
 </section>
 
 <nav class="navbar navbar-default" id="navbar-top-menu">
-     <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
+    <div class="navbar-bg">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">&nbsp;</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="#"><img class="logo" src="../image/logo.png" /></a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <form class="navbar-form  navbar-right" role="search">
-                    <div class="form-group menu-search">
-                         <input type="text" class="form-control" placeholder="Tìm kiếm">
-                    </div>
-                    <button type="submit" class="btn btn-search"><i class="glyphicon glyphicon-search"></i></button>
-               </form>
-               <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../index.html">TRANG CHỦ</a><span class="sr-only">(current)</span></li>
-                    <li><a href="../about/lich-su-phat-trien.html"  class="menu-active">GIỚI THIỆU</a></li>
-                    <li><a href="#">LĨNH VỰC</a></li>
-                    <li><a href="#">DỰ ÁN</a></li>
-                    <li><a href="../news/index.html">TIN TỨC</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-               </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-     </div>
-     <!-- /.container-fluid -->
+                </button>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../img/logo.png"/></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="../index.html" class="">TRANG CHỦ</a></li>
+                    <li class="dropdown">
+                        <a class="menu-active" href="../about/index.html">GIỚI THIỆU</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about/lich-su-phat-trien.html"><span class="menu_square"></span>Lịch sử phát triển</a></li>
+                            <li><a href="../about/su-menh-tam-nhin.html"><span class="menu_square"></span>Sứ mệnh tầm nhìn</a></li>
+                            <li><a href="../about/bo-may-to-chuc.html"><span class="menu_square"></span>Bộ máy tổ chức</a></li>
+                            <li><a href="../about/cong-ty-thanh-vien.html"><span class="menu_square"></span>Công ty thành viên</a></li>
+                            <li><a href="../about/doi-tac.html"><span class="menu_square"></span>Đối tác - Bạn hàng</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../investors/index.html">LĨNH VỰC KINH DOANH</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a href="../investors/list_xangdau.html"><span class="menu_square"></span>Xăng dầu<i class="fa fa-angle-right"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="../investors/index.html">Kinh doanh xăng dầu</a></li>
+                                    <li><a href="../investors/index.html">Kinh doanh dầu mỡ nhờn</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../investors/list_bds.html"><span class="menu_square"></span>Bất động sản</a></li>
+                            <li><a href="../investors/list_dvbl.html"><span class="menu_square"></span>Dịch vụ bán lẻ</a></li>
+                            <li><a href="../investors/list_lvk.html"><span class="menu_square"></span>Lĩnh vực khác</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="../news/index.html">TIN TỨC</a>
+                        <ul class="dropdown-menu right" role="menu">
+                            <li class="dropdown-submenu">
+                                <a href="../news/list.html"><span class="menu_square"></span>TIN THỊ TRƯỜNG<i class="fa fa-angle-right"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="../news/list.html">Thị trường xăng dầu</a></li>
+                                    <li><a href="../news/list.html">Thị trường BDS</a></li>
+                                    <li><a href="../news/list.html">Thị trường bán lẻ</a></li>
+                                    <li><a href="../news/list.html">Tin thị trường liên quan</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="index.html"><span class="menu_square"></span>TIN NỘI BỘ<i class="fa fa-angle-right"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="../news/list.html">Tin hoạt động XDKD</a></li>
+                                    <li><a href="../news/list.html">Tin phong trào tập thể</a></li>
+                                    <li><a href="../news/list.html">Tin cho cổ đông</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a href="index.html"><span class="menu_square"></span>TIN TUYỂN DỤNG<i class="fa fa-angle-right"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="../news/list.html">Quy trình tuyển dụng</a></li>
+                                    <li><a href="../news/list.html">Môi trường làm việc</a></li>
+                                    <li><a href="../news/list.html">Tuyển dụng mới</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="index.html"><span class="menu_square"></span>TIN VIDEO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact/index.html">LIÊN HỆ</a></li>
+                    <li class="menu-search">
+                        <i class="fa fa-search search-btn"></i>
+                        <div class="search-box">
+                            <form action="#">
+                                <div class="input-group input-group-sm">
+                                    <input type="text" placeholder="Tìm kiếm" class="form-control">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-mipec hvr-sweep-to-bottom" type="submit">Tìm kiếm</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </div>
+    <!-- /.container-fluid -->
 </nav>
 
 <section class="slider">
-     <img src="../image/Banner%20Sp%20hóa%20dầu.JPG" alt="..." style="height: 430px;width: 100%">
+    <img class="img-responsive" src="../images/slides/gioithieu.png" alt="...">
 </section>
 
-<section class="about">
-     <div class="header">
-          <p>
-               <a href="../about/lich-su-phat-trien.html" class="btn">Lịch sử phát triển</a>
-               <a class="btn" href="../about/bo-may-to-chuc.html">Bộ máy tổ chức</a>
-               <a class="btn">Sứ mệnh tầm nhìn</a>
-               <a href="../about/gioi-thieu-cong-ty-thanh-vien.html" class="btn  active-sub">Công ty thành viên</a>
-               <a class="btn">Đối tác</a>
-          </p>
-     </div>
+<section class="toolbar">
+    <div class="container text-left">
+        <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a>
+        <i class="fa fa-angle-double-right"></i> <a href="../about/index.html">Giới thiệu</a>
+        <i class="fa fa-angle-double-right"></i> Công ty thành viên
+
+    </div>
 </section>
 
-<section class="about-content">
-     <div class="container">
-          <div class="strike">
-               <span><h4>MIPEC TECHNOLOGIES</h4></span>
-          </div>
-          <p><strong>Thời gian th&agrave;nh lập: C&ocirc;ng ty Cổ phần Thiết bị C&ocirc;ng nghệ MIPEC được th&agrave;nh lập theo Giấy chứng nhận đăng k&yacute; kinh doanh do Sở Kế hoạch v&agrave; Đầu tư H&agrave; Nội cấp ng&agrave;y 24/08/2010.&nbsp;</strong></p>
-          <p>Lĩnh vực hoạt động: MIPEC Technologies hoạt động tr&ecirc;n c&aacute;c lĩnh vực c&ocirc;ng nghiệp với mục ti&ecirc;u trở th&agrave;nh một c&ocirc;ng ty h&agrave;ng đầu chuy&ecirc;n cung cấp &nbsp;thiết &nbsp;bị - d&acirc;y chuyền, nhi&ecirc;n liệu v&agrave; chuyển giao c&ocirc;ng nghệ cho c&aacute;c Tổng c&ocirc;ng ty c&ugrave;ng c&aacute;c đơn vị th&agrave;nh vi&ecirc;n, c&aacute;c tổng thầu, c&aacute;c chủ dự &aacute;n.</p>
-          <p>&nbsp;-&nbsp;&nbsp; &nbsp;Thiết bị n&acirc;ng hạ v&agrave; vận chuyển</p>
-          <p>&nbsp;-&nbsp;&nbsp; &nbsp;Thiết bị chuy&ecirc;n d&ugrave;ng cho đ&oacute;ng t&agrave;u &nbsp;</p>
-          <p>-&nbsp;&nbsp; &nbsp;M&aacute;y c&ocirc;ng cụ &nbsp;</p>
-          <p>-&nbsp;&nbsp; &nbsp;M&aacute;y x&acirc;y dựng v&agrave; khai th&aacute;c mỏ &nbsp;</p>
-          <p>-&nbsp;&nbsp; &nbsp;Thiết bị vận chuyển v&agrave; bốc xếp vật liệu &nbsp;</p>
-          <p>-&nbsp;&nbsp; &nbsp;Thiết bị dầu kh&iacute; &nbsp;</p>
-          <p>-&nbsp;&nbsp; &nbsp;Thiết bị tr&ecirc;n t&agrave;u &nbsp;</p>
-          <p>-&nbsp;&nbsp; &nbsp;Kinh doanh v&agrave; sản xuất c&aacute;c sản phẩm h&oacute;a dầu</p>
-          <div class="img-content">
-               <img src="../image/Trang%20Giới%20Thiệu%20Banner.JPG">
-               <h3>CÔNG TY CỔ PHẦN HÓA DẦU QUÂN ĐỘI</h3>
-          </div>
-          <p>Th&agrave;nh tựu: MIPEC Technologies đ&atilde; tạo dựng được những mối quan hệ s&acirc;u sắc v&agrave; uy t&iacute;n với rất nhiều cơ quan ban ng&agrave;nh, c&aacute;c chủ đầu tư, tập đo&agrave;n &nbsp;tổng c&ocirc;ng ty v&agrave; qua đ&oacute; nắm được chiến lược, kế hoạch đầu tư, ph&aacute;t triển của kh&aacute;ch h&agrave;ng trong từng giai đoạn, từ đ&oacute; đề ra chiến lược kinh doanh ph&ugrave; &nbsp;hợp. Hiện tại, MIPEC Technologies l&agrave; đối t&aacute;c tin cậy l&acirc;u d&agrave;i của nhiều Tập đo&agrave;n lớn, nhiều Nh&agrave; sản xuất h&agrave;ng đầu của c&aacute;c nước Mỹ, EU, Nhật Bản, Trung Quốc, Nga, Israel &ndash; trong việc cung cấp thiết bị v&agrave; hợp t&aacute;c c&ugrave;ng tham gia nhiều dự &aacute;n tại Việt Nam.&nbsp;</p>
-
-     </div>
+<section class="">
+    <div class="container">
+        <div class="box-shadow">
+            <div class="bg-white mt-40 summary-title text-center">CÔNG TY THÀNH VIÊN</div>
+            <div class="bg-white text-justify pt20 pb50">
+                <p>
+                    Công ty Cổ phần Hóa dầu Quân đội (MIPEC) hiện có 16 công ty thành viên có vốn góp. Các công ty thành
+                    viên có sự thống nhất cao về chiến lược, mục tiêu phát triển và thương hiệu nhưng độc lập và linh hoạt
+                    trong các hoạt động sản xuất kinh doanh.
+                </p>
+                <p>
+                    Khởi đầu với lĩnh vực sản xuất dầu mỡ nhờn chuyên dụng cho khí tài quân sự và mở rộng sang các lĩnh
+                    vực khác như xây dựng hạ tầng, kho bãi, kinh doanh xăng dầu, tham gia thị trường bất động sản và thị
+                    trường kinh doanh bán lẻ phục vụ nhu cầu dân sự, MIPEC đã thiết lập được một hệ thống các công ty
+                    hoạt động hiệu quả và luôn nằm trong danh sách những công ty hàng đầu tại Việt Nam.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 
+<section class="p80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img class="img-responsive investor-shadow" src="../images/about/cttv_1.png">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="investor-title text-color-mipec text-center mt-40">MIPEC TECHNOLOGIES</div>
+                <div class="investor-body w100 mt-20 clearfix text-justify">
+                    <p>Công ty Cổ phần Thiết bị Công nghệ MIPEC được thành lập theo Giấy chứng nhận
+                    đăng ký kinh doanh do Sở Kế hoạch và Đầu tư Hà Nội cấp ngày 24/08/2010.</p>
+                </div>
+                <div class="investor-body w40 mt-20 clearfix">
+                    <a class="link_investor_p" href="cttv_tnlg.html"><i class="icon_investor_p icon_investor_p1"></i> XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p80">
+        <div class="b-top"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img class="img-responsive investor-shadow" src="../images/about/cttv_2.png">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="investor-title text-color-mipec text-center mt-40">MIPEC LAND</div>
+                <div class="investor-body w100 mt-20 clearfix text-justify">
+                    <p>Công ty Cổ phần Bất động sản MIPEC (MIPEC Land) được thành lập theo Giấy
+                        chứng nhận đăng ký kinh doanh do Sở Kế hoạch và Đầu tư Hà Nội cấp ngày 09/10/2009 (lần đầu) và
+                        đăng ký thay đổi lần thứ 3 ngày 28/01/2013.</p>
+                </div>
+                <div class="investor-body w40 mt-20 clearfix">
+                    <a class="link_investor_p" href="cttv_land.html"><i class="icon_investor_p icon_investor_p1"></i> XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p80">
+        <div class="b-top"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img class="img-responsive investor-shadow" src="../images/about/cttv_3.png">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="investor-title text-color-mipec text-center mt-40">MIPEC PETRO</div>
+                <div class="investor-body w100 mt-20 clearfix text-justify">
+                    <p>Công ty TNHH MTV Kinh doanh Thương mại Xăng dầu MIPEC (MIPEC Petro) được
+                        thành lập và hoạt động theo giấy phép của Sở Kế hoạch và Đầu tư TP. Hà Nội vào ngày 06/06/2012.</p>
+                </div>
+                <div class="investor-body w40 mt-20 clearfix">
+                    <a class="link_investor_p" href="cttv_petro.html"><i class="icon_investor_p icon_investor_p1"></i> XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p80">
+        <div class="b-top"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img class="img-responsive investor-shadow" src="../images/about/cttv_4.png">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="investor-title text-color-mipec text-center mt-40">MIPEC HỒ CHÍ MINH</div>
+                <div class="investor-body w100 mt-20 clearfix text-justify">
+                    <p>Công ty TNHH MTV Hóa dầu Quân đội (MIPEC Hồ Chí Minh) được thành lập và hoạt
+                        động theo giấy phép của Sở Kế hoạch và Đầu tư TP. Hồ Chí Minh vào ngày 23/07/2009.</p>
+                </div>
+                <div class="investor-body w40 mt-20 clearfix">
+                    <a class="link_investor_p" href="cttv_hcm.html"><i class="icon_investor_p icon_investor_p1"></i> XEM THÊM</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container text-center">
+    <div class="b-top"></div>
+    <div class="pagination">
+        <li><a><img src="../image/prev.gif"></a></li>
+        <li><a class="page-active">1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+        <li><a><img src="../image/next.gif"></a></li>
+    </div>
+</div>
 <footer class="footer">
-     <div class="header">
-          <div class="container" style="position: relative">
-               <h3>Tin Tức</h3>
+    <div class="header">
+        <div class="container" style="position: relative">
+            <h3>Tin Nhanh</h3>
+            <p class="marquee">Giá xăng Plat bán buôn bình quân 15 ngày khu vực đã giảm 4,4% - 5.5% kể từ lần điều chỉnh giá bán lẻ trong nước gần nhất vào ngày 19/08/2015</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <ul class="nav navbar-nav ">
+                <li><a href="../index.html">TRANG CHỦ</a></li>
+                <li><a href="../about/lich-su-phat-trien.html">GIỚI THIỆU</a></li>
+                <li><a href="../investors/index.html">LĨNH VỰC KINH DOANH</a></li>
+                <li><a href="../news/index.html">TIN TỨC</a></li>
+                <li><a class="menu-active" href="index.html">LIÊN HỆ</a></li>
+                <li><a href="http://data.mipec.vn/" target="_blank">MIPEC DATA</a></li>
+                <li><a href="https://mail.mipec.com.vn/" target="_blank">WEBMAIL</a></li>
+            </ul>
 
-               <p class="marquee">Hà Nội, ngày 03.12.2015, Công ty Cổ phần Hóa dầu Quân đội (MIPEC) chính thức điều chỉnh giá bán lẻ xăng sinh học E5 RON 92, xăng
-                    các
-                    loại (RON 95, RON 92); dầu mazut (FO). Giá mỗi mặt hàng sau khi</p>
-          </div>
-     </div>
-     <div class="content">
-          <div class="container">
-               <ul class="nav navbar-nav ">
-                    <li><a href="#">TRANG CHỦ</a></li>
-                    <li><a href="lich-su-phat-trien.html" class="menu-active">GIỚI THIỆU</a></li>
-                    <li><a href="#">LĨNH VỰC</a></li>
-                    <li><a href="#">DỰ ÁN</a></li>
-                    <li><a href="#">TIN TỨC</a></li>
-                    <li><a href="#">LIÊN HỆ</a></li>
-               </ul>
-
-               <div class="info">
-                    <div class="col-lg-8 col-md-8 col-xs-12">
-                         <h4>CÔNG TY CỔ PHẦN HÓA DẦU QUÂN ĐỘI</h4>
-                         <p>Trụ sở chính: N1 33B Phạm Ngũ Lão - Phường Phan Chu Trinh - Quận Hoàn Kiếm - Hà Nội</p>
-                         <p>Điện Thoại: 04.37342501 - 04.37342912 - 069.555322 | Fax: 04.37342520</p>
-                    </div>
-                    <img src="../image/s.png" style="float: right;margin-top: 20px;">
-               </div>
-          </div>
+            <div class="info">
+                <div class="col-xs-12 text-center">
+                    <div class="footer_company">CÔNG TY CỔ PHẦN HÓA DẦU QUÂN ĐỘI</div>
+                    <p>Trụ sở chính: N1 33B Phạm Ngũ Lão - Phường Phan Chu Trinh - Quận Hoàn Kiếm - Hà Nội</p>
+                    <p>Điện Thoại: 04.37342501 - 04.37342912 - 069.555322 | Fax: 04.37342520</p>
+                </div>
+            </div>
+        </div>
 
 
-     </div>
-     <div class="bottom">
-          <p>© 2015 Copyright <a href="">mipec.vn</a>. All right Reserved</p>
-     </div>
+    </div>
+    <div class="bottom">
+        <p>© 2015 Copyright <a href="">mipec.vn</a>. All right Reserved</p>
+    </div>
 </footer>
 
 <script src="../js/jquery-2.1.4.min.js"></script>
-<script src="../js/jquery.carouFredSel-6.2.1.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/app.js"></script>
 </body>

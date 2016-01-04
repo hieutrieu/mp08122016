@@ -8,6 +8,7 @@
      <link href="../css/bootstrap.min.css" rel="stylesheet">
      <link href="../fonts/font-awesome.min.css" rel="stylesheet">
      <link href="../css/style.css" rel="stylesheet">
+     <link href="../js/flexslider/flexslider.css" rel="stylesheet">
 </head>
 <body>
 <section class="top-nemu">
@@ -126,24 +127,70 @@
 <section class="toolbar">
      <div class="container text-left">
           <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a>
-          <i class="fa fa-angle-double-right"></i> Giới thiệu
+          <i class="fa fa-angle-double-right"></i> <a href="../about/index.html">Giới thiệu</a>
+          <i class="fa fa-angle-double-right"></i> Công ty thành viên
 
      </div>
 </section>
 
-<section class="about-content">
+<section class="">
      <div class="container">
-          <div class="header-title text-center">
-               <div class="header-container">BỘ MÁY TỔ CHỨC</div>
+          <div class="bg-white mt-40 summary-title text-center">ĐỐI TÁC - BẠN HÀNG</div>
+     </div>
+     <div class="container box-shadow ">
+          <div class="p30 bg-white">
+               <div id="carousel_partner" class="flexslider">
+                    <ul class="slides">
+                         <li>
+                              <div class="double-thumb" data-target="#p1"><img class="img-responsive" src="../images/partners/p1.png"/></div>
+                              <div class="double-thumb" data-target="#p4"><img class="img-responsive" src="../images/partners/p4.png"/></div>
+                         </li>
+                         <li>
+                              <div class="double-thumb" data-target="#p2"><img class="img-responsive" src="../images/partners/p2.png"/></div>
+                              <div class="double-thumb" data-target="#p5"><img class="img-responsive" src="../images/partners/p5.png"/></div>
+                         </li>
+                         <li>
+                              <div class="double-thumb active" data-target="#p3"><img class="img-responsive" src="../images/partners/p3.png"/></div>
+                              <div class="double-thumb" data-target="#p6"><img class="img-responsive" src="../images/partners/p6.png"/></div>
+                         </li>
+                         <li>
+                              <div class="double-thumb" data-target="#p1"><img class="img-responsive" src="../images/partners/p1.png"/></div>
+                              <div class="double-thumb" data-target="#p4"><img class="img-responsive" src="../images/partners/p4.png"/></div>
+                         </li>
+                         <li>
+                              <div class="double-thumb" data-target="#p2"><img class="img-responsive" src="../images/partners/p2.png"/></div>
+                              <div class="double-thumb" data-target="#p5"><img class="img-responsive" src="../images/partners/p5.png"/></div>
+                         </li>
+                         <li>
+                              <div class="double-thumb" data-target="#p3"><img class="img-responsive" src="../images/partners/p3.png"/></div>
+                              <div class="double-thumb" data-target="#p6"><img class="img-responsive" src="../images/partners/p6.png"/></div>
+                         </li>
+                    </ul>
+               </div>
           </div>
      </div>
-     <div class="container">
-
-          <div class="img-about">
-               <img class="img-responsive" src="../images/about/bmtc.png">
-               <!--<h3>CÔNG TY CỔ PHẦN HÓA DẦU QUÂN ĐỘI</h3>-->
+     <div class="container mt-40 slideup" id="p3">
+          <div class="bg-white p20 summary-title text-center">PETROLIMEX</div>
+          <p>Tổng công ty Xăng dầu Việt Nam (Petrolimex) là cổ đông sáng lập của Công ty cổ phần hóa dầu Quân đội với 10%</p>
+          <div class="mt-15 text-center img-about">
+               <img class="img-responsive" style="width: 100%" src="../images/about/petrolimex.png"/>
+               <div class="img-caption">Petrolimex</div>
           </div>
-
+     </div>
+     <div class="container mt-40 slideup" id="p5" style="display: none">
+          <div class="bg-white p20 summary-title text-center">HÒA BÌNH CONSTRUCTIONS</div>
+          <p>
+               Công ty Cổ phần Xây dựng và Kinh doanh địa ốc Hòa Bình thành lập vào ngày 27/09/1987. Đến
+               nay, Hòa Bình đã trở thành công ty xây dựng hàng đầu trong nước và có uy tín cao đối với các
+               nhà thầu quốc tế với slogan "Hòa Bình chinh phục đỉnh cao". Ngoài ra, là công ty xây dựng duy
+               nhất ở phía Nam được Chính phủ chọn tham gia "CHƯƠNG TRÌNH THƯƠNG HIỆU QUỐC GIA"
+               và được vinh danh nhiều giải thưởng cao quý trong nước cũng như quốc tế. Đến nay, Hòa Bình
+               đã góp phần hoàn thành hơn 80 công trình xây dựng nhà cao tầng và hiện đang triển khai gần
+               50 công trình trên cả nước.
+               Hòa Bình là nhà thầu thi công dự án Mipec Riverside do Công ty Cổ phần Hóa dầu Quân đội làm
+               chủ đầu tư. Trong tương lai, dự án Mipec Riverside sẽ là một trong những khu tổ hợp căn hộ -
+               văn phòng – trung tâm thương mại – vui chơi giải trí hiện đại bậc nhất trong trung tâm thành phố.
+          </p>
      </div>
 </section>
 
@@ -184,7 +231,33 @@
 
 <script src="../js/jquery-2.1.4.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<!-- optionally include helper plugins -->
+<script src="../js/modernizr.js"></script>
+<script src="../js/flexslider/jquery.flexslider-min.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
 <script src="../js/app.js"></script>
+<script type="text/javascript">
+     $(window).load(function () {
+          $('#carousel_partner').flexslider({
+               animation: "slide",
+               controlNav: false,
+               animationLoop: false,
+               slideshow: false,
+               itemWidth: 305,
+               itemMargin: 10,
+               asNavFor: '#slider'
+          });
+          $('.double-thumb').click(function() {
+               var target = $(this).data( "target" );
+
+               $('.double-thumb').removeClass('active');
+               $(this).addClass('active');
+               $('.slideup').fadeOut();
+               $(target).slideDown( "slow", function() {
+                    // Animation complete.
+               });
+          });
+     });
+</script>
 </body>
 </html>
