@@ -1564,15 +1564,24 @@ a.link_investor_p:hover .icon_investor_p {
 .active .hexagon_sub:after,
 .hexagon:hover .hexagon_sub:after {
     border-right: 28px solid #296347;
+    transition: border-right .25s ease-in-out;
+    -moz-transition: border-right .25s ease-in-out;
+    -webkit-transition: border-right .25s ease-in-out;
 }
 .active .hexagon_sub:before,
 .hexagon:hover .hexagon_sub:before {
     border-left: 28px solid #296347;
+    transition: border-left .25s ease-in-out;
+    -moz-transition: border-left .25s ease-in-out;
+    -webkit-transition: border-left .25s ease-in-out;
 }
 .active .hexagon_sub,
 .hexagon:hover .hexagon_sub {
     background: #296347;
     color: #fff;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
 }
 .step-about.active {
     color: #000;

@@ -296,6 +296,9 @@ html[xmlns] .flexslider .slides {
 .step-bg.active,
 .step-bg:hover {
   background: #2f7d57;
+  transition: background .25s ease-in-out;
+  -moz-transition: background .25s ease-in-out;
+  -webkit-transition: background .25s ease-in-out;
 }
 .step-thumb {
   width: 118px;
