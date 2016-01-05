@@ -335,11 +335,11 @@ a:focus, a:hover {
     z-index: 1;
     visibility: hidden;
     background-color: rgba(0,0,0, 0.5);
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .fade-preview .mask i {
     color: white;
@@ -870,7 +870,7 @@ a:hover .media-heading {
     width: 100%;
 }
 .bg{
-    background: #e6e6e6;
+    background: #ebebeb;
     min-height: 0;
 }
 
@@ -1082,11 +1082,11 @@ a.btn.hvr-sweep-to-bottom {
     z-index: 1;
     visibility: hidden;
     background-color: rgba(0,0,0, 0.5);
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .zoom-preview:hover img {
     -webkit-transform: scale(1.1,1.1);
@@ -1609,4 +1609,120 @@ a.link_investor_p:hover .icon_investor_p {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.recruit {
+    width: 66px;
+    height: 132px;
+    background: #d3d3d3;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    margin-left: -33px;
+    cursor: pointer;
+    display: block;
+}
+.recruit:before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    width: 0;
+    height: 0;
+    border-top: 66px solid transparent;
+    border-bottom: 66px solid transparent;
+    border-right: 40px solid #d3d3d3;
+}
+.recruit:after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    width: 0;
+    height: 0;
+    border-top: 66px solid transparent;
+    border-bottom: 66px solid transparent;
+    border-left: 40px solid #d3d3d3;
+    z-index: 8;
+}
+.active .recruit:after,
+.step-about:hover .recruit:after {
+    border-left: 40px solid #296347;
+}
+.active .recruit:before,
+.step-about:hover .recruit:before {
+    border-right: 40px solid #296347;
+}
+.active .recruit,
+.step-about:hover .recruit {
+    background: #296347;
+}
+.active .recruit_block,
+.step-about:hover .recruit_block {
+    color: #296347;
+}
+.recruit_block {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+}
+.recruit > .recruit_img_active {
+    display: none!important;
+}
+.active > .recruit > .recruit_img_active,
+.step-about:hover > .recruit > .recruit_img_active {
+    display: block!important;
+}
+.recruit > .recruit_img,
+.recruit > .recruit_img_active {
+    position: absolute;
+    top: 18px;
+    left: -18px;
+    width: 100px!important;
+    z-index: 9;
+}
+
+.animation-element {
+    position: relative;
+}
+.in-view .left_to_right {
+    -webkit-animation-name: left_to_right; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: left_to_right;
+    animation-duration: .5s;
+}
+.in-view .right_to_left {
+    -webkit-animation-name: right_to_left; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: right_to_left;
+    animation-duration: 0.5s;
+}
+
+.in-view .bottom_to_top {
+    -webkit-animation-name: bottom_to_top; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-name: bottom_to_top;
+    animation-duration: 0.5s;
+}
+@-webkit-keyframes left_to_right {
+    0%  {left:-20px; top:0px;}
+    25%  {left:0px; top:0px;}
+}
+@-webkit-keyframes right_to_left {
+    0%  {right:-20px; top:0px;}
+    25%  {right:0px; top:0px;}
+}
+@-webkit-keyframes bottom_to_top {
+    0%  {top:40px;}
+    25%  {top:0px;}
+}
+@keyframes left_to_right {
+    from  {left:-20px; top:0px;}
+    to {left:0px; top:0px;}
+}
+@keyframes right_to_left {
+    from  {right:-20px; top:0px;}
+    to {right:0px; top:0px;}
+}
+@keyframes bottom_to_top {
+    from  {top:40px;}
+    to {top:0px;}
 }
