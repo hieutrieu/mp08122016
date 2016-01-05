@@ -116,6 +116,9 @@ input.form-control {
     background: #296347;
     border: 1px solid #1b432f!important;
     color: #FFFFFF!important;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
 }
 
 .navbar-default li.menu-search i {
@@ -1385,6 +1388,9 @@ li.dropdown-submenu > .dropdown-menu {
 .box a:hover {
     background: #296347;
     color: #FFFFFF;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
 }
 .it-icons {
     width: 41px;
@@ -1435,6 +1441,9 @@ a.link_investor_p:hover {
 
 a.link_investor_p:hover .icon_investor_p {
     background: url("../img/icon_investor_p_hover.png") bottom center no-repeat;
+    transition: background .25s ease-in-out;
+    -moz-transition: background .25s ease-in-out;
+    -webkit-transition: background .25s ease-in-out;
 }
 
 .project_title {

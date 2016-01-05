@@ -25,7 +25,6 @@
         }
         handleSearch();
         handleBacktoTop();
-        handleGoogleMap('google_map');
     });
 })(jQuery);
 var handleSearch = function () {
@@ -61,24 +60,26 @@ var handleSearch = function () {
         });
     }
 }
+
 var handleGoogleMap = function (id) {
     if ($('#' + id).length > 0) {
         var myMarkers = {
             "markers": [{
-                "latitude": "21.02148",		// latitude
-                "longitude": "105.860529",		// longitude
+                "latitude": "21.021953",		// latitude
+                "longitude": "105.860057",		// longitude
                 "icon": "../img/marker_1.png"	// Pin icon
             }]
         };
 
         $("#" + id).mapmarker({
-            zoom: 16,							// Zoom
-            center: "21.02148,105.860529",		// Center of map
+            zoom: 18,							// Zoom
+            center: "21.021953,105.860057",		// Center of map
             type: "ROADMAP",					// Map Type
             controls: "HORIZONTAL_BAR",			// Controls style
             dragging: true,							// Allow dragging?
             mousewheel: true,	// Allow zooming with mousewheel
-            markers: myMarkers, styling: 0,							// Bool - do you want to style the map?
+            markers: myMarkers,
+            styling: 0,							// Bool - do you want to style the map?
             featureType: "all",
             visibility: "on",
             elementType: "geometry",
@@ -87,9 +88,6 @@ var handleGoogleMap = function (id) {
             lightness: 0,
             gamma: 1,
             navigation_control: 0
-            /*
-             To play with the map colors and styles you can try this tool right here http://gmaps-samples-v3.googlecode.com/svn/trunk/styledmaps/wizard/index.html
-             */
         });
     }
 }

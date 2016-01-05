@@ -7,10 +7,10 @@
 			var map_element = this;
 			//addMapMarker(map_element, opts.zoom, opts.center, opts.type, opts.dragging, opts.mousewheel, opts.controls, opts.markers, opts.styling, opts.featureType, opts.visibility, opts.elementType, opts.hue, opts.saturation, opts.lightness, opts.gamma, opts.navigation_control);
 			addMapMarker(map_element, opts);
-			
+
 		});
 	};
-	
+
 	// Set up default values
 	var defaultMarkers = {
 		"markers": []
@@ -66,9 +66,9 @@
 			case"HORIZONTAL_BAR":
 				mapcontrols = google.maps.MapTypeControlStyle.HORIZONTAL_BAR;
 			break;
-			
+
 		}
-		
+
 		var coords = opts.center.split(","),
 			centerPoint = new google.maps.LatLng(coords[0],coords[1]);
 		if(opts.styling) {
@@ -117,7 +117,7 @@
 				shadow: shadow,
 				shape: shape,
 				map: map,
-				animation: google.maps.Animation.DROP
+				animation: google.maps.Animation.BOUNCE
 			}));
 			iterator++;
 		}
@@ -133,12 +133,12 @@
 				new google.maps.Point(0,22)
 			);
 			//var baloon_text=the_marker.baloon_text;
-			
+
 			if(latitude!="" && longitude!=""){
 				var marker = new google.maps.Marker({
-					map: map, 
+					map: map,
 					position: new google.maps.LatLng(latitude,longitude),
-					animation: google.maps.Animation.DROP,
+					//animation: google.maps.Animation.BOUNCE,
 					icon: icon,
 					draggable: false,
 					raiseOnDrag: false
