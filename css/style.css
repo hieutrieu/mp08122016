@@ -1726,3 +1726,30 @@ a.link_investor_p:hover .icon_investor_p {
     from  {top:40px;}
     to {top:0px;}
 }
+
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px; /* negative of the offset - height of link element */
+    right: 10px; /* padding from the left side of the window */
+}
+#top-link-block .fa {
+    font-size: 34px;
+}
+#top-link-block {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 10px; /* height of link element */
+    right: 10px; /* padding from the left side of the window */
+    height: 44px;
+    width: 44px;
+    border-radius: 100%;
+    background: #296347;
+    border: 2px solid #d7d7d7;
+    text-align: center;
+    color: #d7d7d7;
+    cursor: pointer;
+}
+#top-link-block:hover {
+    background: #092b1b;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
