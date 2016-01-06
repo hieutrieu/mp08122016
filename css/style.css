@@ -467,13 +467,15 @@ a:focus, a:hover {
     font-size: 13px;
     text-align: left;
 }
-
+.mask.mask_show,
 .news .img:hover .bottom, .business .img:hover .mask, .typical .img:hover .mask,.fade-preview:hover .mask {
     visibility: visible;
     opacity: 1;
     cursor: pointer;
 }
-
+.mask.mask_show:hover i {
+    color: #ffc000;
+}
 .news .readmore {
     float: right;
     color: #296347;
@@ -1235,7 +1237,7 @@ li.dropdown-submenu {
 }
 li.dropdown-submenu > .dropdown-menu {
     border-top: none!important;
-    top: 0;
+    top: -5px;
 }
 .dropdown-menu>li>a {
     display: block;

@@ -113,9 +113,9 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 60px;
-  height: 70px;
-  margin: -43px 0 0;
+  width: 40px;
+  height: 50px;
+  margin: -25px 0 0;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -132,7 +132,7 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a:before {
   font-family: "flexslider-icon";
   font-family: 'Glyphicons Halflings';
-  font-size: 60px;
+  font-size: 40px;
   display: inline-block;
   content: '\e257';
   color: rgba(0, 0, 0, 0.8);
