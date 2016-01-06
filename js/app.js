@@ -67,7 +67,7 @@ var handleGoogleMap = function (id) {
             "markers": [{
                 "latitude": "21.021953",		// latitude
                 "longitude": "105.860057",		// longitude
-                "icon": "../img/marker_1.png"	// Pin icon
+                "icon": "../img/mipec_map.png"	// Pin icon
             }]
         };
 
