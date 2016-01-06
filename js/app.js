@@ -115,7 +115,7 @@ var showLocationMap = function (elm) {
     $('.google_map_location').hide();
     $('#' + elm).fadeIn();
 }
-var marquee = $('p.marquee');
+/*var marquee = $('p.marquee');
 marquee.each(function () {
     var mar = $(this), indent = mar.width();
     mar.marquee = function () {
@@ -126,7 +126,7 @@ marquee.each(function () {
         }
     };
     mar.data('interval', setInterval(mar.marquee, 1000 / 60));
-});
+});*/
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 

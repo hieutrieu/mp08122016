@@ -1778,3 +1778,7 @@ a.link_investor_p:hover .icon_investor_p {
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
 }
+marquee {
+    color: #FFFFFF;
+    line-height: 40px;
+}
