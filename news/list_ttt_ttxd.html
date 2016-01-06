@@ -8,10 +8,6 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../fonts/font-awesome.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <section class="top-nemu">
@@ -27,6 +23,7 @@
         </ul>
     </div>
 </section>
+
 
 <nav class="navbar navbar-default" id="navbar-top-menu">
     <div class="navbar-bg">
@@ -44,9 +41,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="main-menu">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="../index.html">TRANG CHỦ</a></li>
+                    <li><a href="../index.html" class="">TRANG CHỦ</a><span class="sr-only">&nbsp</span></li>
                     <li class="dropdown">
-                        <a href="../about/index.html">GIỚI THIỆU</a>
+                        <a href="../about/lich-su-phat-trien.html">GIỚI THIỆU</a>
                         <ul class="dropdown-menu">
                             <li style="width: 300px"><a href="../about/lich-su-phat-trien.html"><span class="menu_square"></span>Lịch sử hình thành & phát triển</a></li>
                             <li><a href="../about/"><span class="menu_square"></span>Sứ mệnh tầm nhìn</a></li>
@@ -59,7 +56,7 @@
                         <a href="../investors/index.html">LĨNH VỰC KINH DOANH</a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
-                                <a href="../investors/lich-su-phat-trien.html"><span class="menu_square"></span>Xăng dầu<i class="fa fa-angle-right"></i></a>
+                                <a href="../investors/index.html"><span class="menu_square"></span>Xăng dầu<i class="fa fa-angle-right"></i></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="../investors/detail_kinhdoanhxangdau.html">Kinh doanh xăng dầu</a></li>
                                     <li><a href="../investors/detail_kinhdoanhmonhon.html">Kinh doanh dầu mỡ nhờn</a></li>
@@ -76,7 +73,7 @@
                             <li class="dropdown-submenu">
                                 <a href="../news/list_ttt.html"><span class="menu_square"></span>TIN THỊ TRƯỜNG<i class="fa fa-angle-right"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="../news/list_ttt_ttxd.html">Thị trường xăng dầu</a></li>
+                                    <li><a href="../news/list.html">Thị trường xăng dầu</a></li>
                                     <li><a href="../news/list.html">Thị trường BDS</a></li>
                                     <li><a href="../news/list.html">Thị trường bán lẻ</a></li>
                                     <li><a href="../news/list.html">Tin thị trường liên quan</a></li>
@@ -105,7 +102,7 @@
                     <li class="menu-search">
                         <i class="fa fa-search search-btn"></i>
                         <div class="search-box">
-                            <form action="../contact/index.html">
+                            <form action="../search.html">
                                 <div class="input-group input-group-sm">
                                     <input type="text" placeholder="Tìm kiếm" class="form-control">
                                     <div class="input-group-btn">
@@ -129,33 +126,20 @@
 
 <section class="toolbar">
     <div class="container text-left">
-        <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a> <i class="fa fa-angle-double-right"></i> Tin tức
+        <i class="fa fa-home"></i> <a href="../index.html">Trang chủ</a>
+        <i class="fa fa-angle-double-right"></i> <a href="../news/index.html">Tin tức</a>
+        <i class="fa fa-angle-double-right"></i> <a href="../news/list_ttt.html">Tin thị trường</a>
+        <i class="fa fa-angle-double-right"></i> Thị trường xăng dầu
     </div>
 </section>
 
-<section class="about-content bg" STYLE="background: white">
+<section class="pb40">
     <div class="container">
         <div class="header-title text-center">
-            <div class="header-container">TIN THỊ TRƯỜNG</div>
+            <div class="header-container">THỊ TRƯỜNG XĂNG DẦU</div>
         </div>
 
-        <div class="row" style="margin-top: 50px">
-            <div class="col-md-6 col-xs-12">
-                <div class="clearfix">
-                    <div class="fade-preview">
-                        <img class="img-responsive" src="../images/news/img_auchan.png">
-                        <div class="news_date">
-                            <span class="day">05</span>
-                            <span class="line"></span>
-                            <span class="moth">01</span>
-                        </div>
-                    </div>
-                    <h4>ĐẠI GIA BÁN LẺ AUCHAN (PHÁP) "OANH KÍCH" THỊ TRƯỜNG VIỆT</h4>
-                    <p>Tập đoàn bán lẻ hàng đầu của Pháp – Auchan – bắt đầu mở siêu thị ở Hà Nội, tiếp
-                        tục đánh dấu sự “oanh kích” của các ông lớn nước ngoài đối với thị trường bán lẻ Việt...</p>
-                </div>
-                <div class="text-center mt-20"><a class="btn btn-mipec-o" href="./detail_auchan.html">Xem thêm</a></div>
-            </div>
+        <div class="row mt-50">
             <div class="col-md-6 col-xs-12">
                 <div class="fade-preview">
                     <img class="img-responsive" src="../images/news/dieuchinhgia.png">
@@ -165,97 +149,78 @@
                         <span class="moth">01</span>
                     </div>
                 </div>
-                <h4>CÔNG TY CỔ PHẦN HÓA DẦU QUÂN ĐỘI ĐIỀU CHỈNH GIÁ XĂNG DẦU TỪ 15 GIỜ 00 NGÀY 04.01.2016</h4>
+                <div class="news-title mt-60 mb-20">CÔNG TY CỔ PHẦN HÓA DẦU QUÂN ĐỘI ĐIỀU CHỈNH GIÁ XĂNG DẦU TỪ 15 GIỜ 00 NGÀY 04.01.2016</div>
                 <p>
                     Hà Nội, ngày 04.01.2016, Công ty Cổ phần Hóa dầu Quân đội (MIPEC) chính thức
                     điều chỉnh giá bán lẻ xăng sinh học E5 RON 92, xăng các loại (RON 95, RON 92), dầu mazut
                     (FO).
                 </p>
-
+                <div class="text-center mt-20"><a class="btn btn-mipec-o" href="./detail_dieuchinhgia.html">Xem thêm</a></div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="fade-preview">
+                    <img class="img-responsive" src="../images/news/dieuchinhgia2.jpg">
+                    <div class="news_date">
+                        <span class="day">18</span>
+                        <span class="line"></span>
+                        <span class="moth">12</span>
+                    </div>
+                </div>
+                <div class="news-title mt-60 mb-20">CÔNG TY CỔ PHẦN HÓA DẦU QUÂN ĐỘI ĐIỀU CHỈNH GIÁ XĂNG DẦU TỪ 15 GIỜ 00 NGÀY 18.12.2015</div>
+                <p>
+                    Hà Nội, ngày 18.12.2015, Công ty Cổ phần Hóa dầu Quân đội (MIPEC) chính thức điều chỉnh giá bán lẻ xăng sinh học E5 RON 92, xăng các loại (RON 95, RON 92); dầu mazut (FO).
+                </p>
+                <div class="text-center mt-20"><a class="btn btn-mipec-o" href="./detail_dieuchinhgia.html">Xem thêm</a></div>
+            </div>
+        </div>
+        <div class="container text-center p50"><div class="b-top"></div></div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="fade-preview">
+                    <img class="img-responsive" src="../images/news/dieuchinhgia3.jpg">
+                    <div class="news_date">
+                        <span class="day">03</span>
+                        <span class="line"></span>
+                        <span class="moth">12</span>
+                    </div>
+                </div>
+                <div class="news-title mt-60 mb-20">Công ty Cổ phần Hóa dầu Quân đội điều chỉnh giá xăng dầu từ 15 giờ 00 ngày 03.12.2015</div>
+                <p>
+                    Hà Nội, ngày 03.12.2015, Công ty Cổ phần Hóa dầu Quân đội (MIPEC) chính thức điều chỉnh giá bán lẻ xăng sinh học E5 RON 92, xăng các loại...
+                </p>
+                <div class="text-center mt-20"><a class="btn btn-mipec-o" href="./detail_dieuchinhgia.html">Xem thêm</a></div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="fade-preview">
+                    <img class="img-responsive" src="../images/news/dieuchinhgia4.png">
+                    <div class="news_date">
+                        <span class="day">19</span>
+                        <span class="line"></span>
+                        <span class="moth">08</span>
+                    </div>
+                </div>
+                <div class="news-title mt-60 mb-20">TẬP ĐOÀN XĂNG DẦU VIỆT NAM GIẢM GIÁ XĂNG DẦU TỪ 15 GIỜ 00 NGÀY 19.8.2015</div>
+                <p>
+                    Hà Nội, ngày 19.8.2015, Tập đoàn Xăng dầu Việt Nam (Petrolimex/Tập đoàn) chính thức giảm giá các mặt hàng xăng dầu;
+                    theo đó, mức giá mới như ...
+                </p>
                 <div class="text-center mt-20"><a class="btn btn-mipec-o" href="./detail_dieuchinhgia.html">Xem thêm</a></div>
             </div>
         </div>
     </div>
 </section>
 
-
-<section class="about-content bg">
-    <div class="container">
-        <div class="header-title text-center">
-            <div class="header-container bg">TIN NỘI BỘ</div>
-        </div>
-        <div class="row" style="margin-top: 50px">
-            <div class="col-md-6 col-xs-12">
-                <div class="fade-preview">
-                    <img class="img-responsive" src="../images/news/img_okbingsull.png">
-                    <div class="news_date">
-                        <span class="day">24</span>
-                        <span class="line"></span>
-                        <span class="moth">12</span>
-                    </div>
-                </div>
-                <h4>KHAI TRƯƠNG THƯƠNG HIỆU KEM NỐI TIẾNG HÀN QUỐC – OKBINGSUL TẠI HÀ NỘI</h4>
-
-                <p>
-                    Ra mắt đúng dịp Giáng sinh, ngày 24/12/2015, cửa hàng đầu tiên của thương hiệu
-                    kem nổi tiếng Hàn Quốc – Okbingsul đã chính thức khai trương tại tầng 1 – Tòa nhà Lotte Mart
-                    – MIPEC Tower – 229 Tây Sơn, Hà Nội.
-                </p>
-                <div class="text-center mt-20"><a class="btn btn-mipec-o" href="./detail_okbingsul.html">Xem thêm</a></div>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <div class="fade-preview">
-                    <img class="img-responsive" src="../images/news/giaigoldmipeclap1.png">
-                    <div class="news_date">
-                        <span class="day">17</span>
-                        <span class="line"></span>
-                        <span class="moth">12</span>
-                    </div>
-                </div>
-                <h4>GIẢI GOLF MIPEC MỞ RỘNG LẦN 1</h4>
-
-                <p>
-                    Ngày 17/12/2015, tại sân Golf Lake Side Đồng Mô đã diễn ra Giải Golf MIPEC mở
-                    rộng lần I. Giải thi đấu nằm trong khuôn khổ các hoạt động chào mừng 71 năm Ngày thành lập
-                    Quân đội Nhân dân Việt Nam và kỷ nhiệm 12 năm Ngày thành lập Công ty Cổ phần Hóa dầu
-                    Quân đội.
-                </p>
-
-                <div class="text-center mt-20"><a class="btn btn-mipec-o" href="./detail_golf.html">Xem thêm</a></div>
-            </div>
-        </div>
+<div class="container text-center">
+    <div class="b-top"></div>
+    <div class="pagination">
+        <li><a><img src="../image/prev.gif"></a></li>
+        <li><a class="page-active">1</a></li>
+        <li><a>2</a></li>
+        <li><a>3</a></li>
+        <li><a>4</a></li>
+        <li><a><img src="../image/next.gif"></a></li>
     </div>
-</section>
-
-<section class="about-content bg n v" style="background: white">
-    <div class="container">
-        <div class="header-title text-center">
-            <div class="header-container">TIN VIDEO</div>
-        </div>
-
-        <div class="row" style="margin-top: 50px">
-            <div class="col-md-6 col-xs-12">
-                <div class="fade-preview">
-                    <img class="img-responsive" src="../images/news/mipecreverside.png">
-                    <div class="mask mask_show" data-toggle="modal" data-title="BẢN TIN KINH TẾ VTV1 VỀ DỰ ÁN MIPEC RIVERSIDE" data-theVideo="https://www.youtube.com/embed/TkSDyS6Ubvc" data-target="#videoModal">
-                        <i class="glyphicon glyphicon-play-circle"></i>
-                    </div>
-                </div>
-                <h4>BẢN TIN KINH TẾ VTV1 VỀ DỰ ÁN MIPEC RIVERSIDE</h4>
-            </div>
-            <div class="col-md-6 col-xs-12">
-                <div class="fade-preview">
-                    <img class="img-responsive" src="../images/news/phimngan10namthanhlap.png">
-
-                    <div class="mask mask_show" data-toggle="modal" data-title="PHIM NGẮN GIỚI THIỆU MIPEC 10 NĂM THÀNH LẬP" data-theVideo="https://www.youtube.com/embed/Knsr1w1Xi1c" data-target="#videoModal">
-                        <i class="glyphicon glyphicon-play-circle"></i>
-                    </div>
-                </div>
-                <h4>PHIM NGẮN GIỚI THIỆU MIPEC 10 NĂM THÀNH LẬP</h4>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 
 <footer class="footer">
     <div class="header">
@@ -267,11 +232,11 @@
     <div class="content">
         <div class="container">
             <ul class="nav navbar-nav ">
-                <li><a href="../index.html">TRANG CHỦ</a></li>
-                <li><a href="../about/index.html">GIỚI THIỆU</a></li>
-                <li><a href="../investors/index.html">LĨNH VỰC KINH DOANH</a></li>
-                <li><a class="menu-active" href="./index.html">TIN TỨC</a></li>
-                <li><a href="../contact/index.html">LIÊN HỆ</a></li>
+                <li><a href="index.html" class="menu-active">TRANG CHỦ</a></li>
+                <li><a href="about/lich-su-phat-trien.html">GIỚI THIỆU</a></li>
+                <li><a href="investors/index.html">LĨNH VỰC KINH DOANH</a></li>
+                <li><a href="news/index.html">TIN TỨC</a></li>
+                <li><a href="contact.html">LIÊN HỆ</a></li>
                 <li><a href="http://data.mipec.vn/" target="_blank">MIPEC DATA</a></li>
                 <li><a href="https://mail.mipec.com.vn/" target="_blank">WEBMAIL</a></li>
             </ul>
@@ -288,7 +253,7 @@
 
     </div>
     <div class="bottom">
-        <p>© 2015 Copyright <a href=">mipec.com.vn</a>. All right Reserved</p>
+        <p>© 2015 Copyright <a href="">mipec.com.vn</a>. All right Reserved</p>
     </div>
 </footer> <div id="top-link-block" class="hidden" onclick="$('html,body').animate({scrollTop:0}, 200);return false;">     <i class="fa fa-angle-up"></i> </div>
 
@@ -297,22 +262,6 @@
 
 <!-- optionally include helper plugins -->
 <script src="../js/app.js"></script>
-<script>
-    autoPlayYouTubeModal();
-</script>
 
-<div id="videoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-                <iframe width="100%" height="480" frameborder="0" allowfullscreen="></iframe>
-            </div>
-        </div>
-    </div>
-</div>
 </body>
 </html>
