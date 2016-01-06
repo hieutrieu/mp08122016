@@ -885,6 +885,8 @@ a:hover .media-heading {
     font-weight: bold;
     font-size: 16px;
     margin: 60px 0 10px 0;
+    line-height: inherit;
+    min-height: 44px;
 }
 .about-content.bg.v h4 {
     margin: 30px 0 10px 0;
