@@ -351,6 +351,13 @@ a:focus, a:hover {
     left: 40%;
     font-size: 80px;
 }
+.fade-preview .mask i.f50 {
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
 
 .business .row h3 {
     text-transform: uppercase;
@@ -723,6 +730,12 @@ a.btn:hover{
 .mt-40 {
     margin-top: 40px;
 }
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-60 {
+    margin-top: 60px;
+}
 .mb-50 {
     margin-bottom: 50px;
 }
@@ -877,6 +890,14 @@ a:hover .media-heading {
 .bg{
     background: #ebebeb;
     min-height: 0;
+}
+
+.news-title {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: inherit;
 }
 
 .about-content.bg h4 {
@@ -1781,4 +1802,8 @@ a.link_investor_p:hover .icon_investor_p {
 marquee {
     color: #FFFFFF;
     line-height: 40px;
+}
+.video_title {
+    font-weight: bold;
+    text-transform: uppercase;
 }
