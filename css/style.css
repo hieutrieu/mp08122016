@@ -1804,6 +1804,9 @@ marquee {
     color: #FFFFFF;
     line-height: 40px;
 }
+marquee a {
+    color: #FFFFFF;
+}
 .video_title {
     font-weight: bold;
     text-transform: uppercase;
