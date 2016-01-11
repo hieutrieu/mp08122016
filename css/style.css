@@ -11,6 +11,7 @@ body, html {
     height: 27px;
     background: #ffffff;
     overflow: hidden;
+    display: none;
 }
 .top-nemu .top .navbar-right {
     margin-right: 0;
@@ -34,53 +35,56 @@ body, html {
 }
 .navbar-default .navbar-brand {
     padding: 0px;
-    height: 82px;
-    margin-top: -27px;
-    background: url(../img/logo_bg.png) no-repeat top left;
-    width: 290px;
+    height: 50px;
+    width: 200px;
     text-align: center;
     position: relative;
-}
-.navbar-default.navbar-fixed-top .navbar-brand {
-    margin-top: -26px;
-    height: 72px;
-}
-.navbar-default.navbar-fixed-top .logo {
-    width: 160px;
-    position: absolute;
-    top: 35px;
-    left: 45px;
+    z-index: 99;
 }
 .logo {
-    width: 240px;
+    width: 130px;
     position: absolute;
-    top: 20px;
-    left: 25px;
+    top: 12px;
+    left: 0;
+}
+.bg-tra {
+    position: absolute;
+    background: #FFFFFF;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
 }
 .navbar-default {
-    background: white;
+    background: transparent;
     border: none;
     margin: 0;
     z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .navbar-bg {
-    background: #296347;
+    background: transparent;
     height:46px;
+}
+.navbar-default li.menu-lang {
+    width: 24px;
+    margin-top: 3px;
 }
 .navbar-default li.menu-search {
     position: relative;
-    top: 14px;
-    padding: 0 0 0 30px;
-    color: #FFFFFF;
+    padding: 0;
+    color: #000;
 }
 .navbar-default .search-box {
     right: -7px;
-    top: 31px;
+    top: 50px;
     padding: 15px;
     display: none;
     background: #fcfafb;
     position: absolute;
-    border-top: solid 2px #ffc000;
+    border-top: solid 2px #ed3338;
     box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
     width: 274px;
     margin-top: 0;
@@ -123,9 +127,10 @@ input.form-control {
 
 .navbar-default li.menu-search i {
     cursor: pointer;
+    padding: 15px;
 }
 .navbar-default li.menu-search i:hover {
-    color: #ffc000;
+    color: #ed3338;
 }
 input, select, textarea, span, img, table, label, td, th, p, a, button, ul, code, pre, li {
     -webkit-border-radius: 0 !important;
@@ -156,21 +161,19 @@ a:focus, a:hover {
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-nav>li>a:focus{
     font-size: 16px;
-    color: white;
-    padding: 14px 0 12px 0;
+    color: #000;
+    padding: 15px 0 15px 0;
     text-transform: uppercase;
     margin: 0 10px;
     font-weight: 400;
 }
-
 .nav > li > a.menu-active {
-    border-bottom: 2px solid #ffc000;
     margin-bottom: -1px;
 }
 .nav > li > a.menu-active,
 .nav > li > a:hover,
 .navbar-default .navbar-nav>li>a:hover{
-    color: #ffc000!important;
+    color: #ed3338!important;
 }
 
 #carousel-example-generic, #carousel-example-generic img {
@@ -196,14 +199,15 @@ a:focus, a:hover {
 }
 
 .toolbar {
-    height: 47px;
+    display: none;
+    height: 40px;
     width: 100%;
     background: #e1e1e1;
-    padding: 10px 0;
+    padding: 0px 0;
 }
 
 .about {
-    padding: 14px 0;
+    padding: 0;
     text-align: center;
     color: #494646;
     font-size: 17px;
@@ -243,7 +247,6 @@ a:focus, a:hover {
     text-transform: uppercase;
     color: #296347;
     margin-top: 45px;
-    font-weight: bold;
     font-size: 24px;
 }
 .summary-title {
@@ -1069,7 +1072,7 @@ a.btn.hvr-sweep-to-bottom {
     transform: scaleY(1);
 }
 #navbar-top-menu.navbar-fixed-top {
-    opacity: 0.95;
+    opacity: 1;
     transition: top 1s ease;
     -webkit-transition: top 1s ease;
     -moz-transition: top 1s ease;
@@ -1079,6 +1082,8 @@ a.btn.hvr-sweep-to-bottom {
     -webkit-box-shadow: 0px 11px 10px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 11px 10px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 11px 10px -10px rgba(0,0,0,0.75);
+    position: fixed;
+    background: #FFFFFF;
 }
 .block-title {
     font-size: 20px;
@@ -1217,6 +1222,7 @@ a.btn.hvr-sweep-to-bottom {
     color: #FFFFFF;
     margin-bottom: 5px;
 }
+
 #main-menu > ul > li:hover > .dropdown-menu {
     display: block;
 }
@@ -1226,6 +1232,9 @@ ul.dropdown-menu > li.dropdown-submenu:hover > .dropdown-menu {
 }
 .navbar-nav>li>.dropdown-menu {
     text-transform: uppercase;
+}
+.navbar-right .dropdown-menu {
+    right: auto;
 }
 
 .dropdown-menu {
@@ -1241,17 +1250,9 @@ ul.dropdown-menu > li.dropdown-submenu:hover > .dropdown-menu {
     text-align: left;
     list-style: none;
     border:none!important;
-    border-top: 2px solid #FFFFFF!important;
+    border-top: none!important;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: rgba(0,91,61,1);
-    background: -moz-linear-gradient(left, rgba(0,91,61,1) 0%, rgba(50,137,95,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,91,61,1)), color-stop(100%, rgba(50,137,95,1)));
-    background: -webkit-linear-gradient(left, rgba(0,91,61,1) 0%, rgba(50,137,95,1) 100%);
-    background: -o-linear-gradient(left, rgba(0,91,61,1) 0%, rgba(50,137,95,1) 100%);
-    background: -ms-linear-gradient(left, rgba(0,91,61,1) 0%, rgba(50,137,95,1) 100%);
-    background: linear-gradient(to right, rgba(0,91,61,1) 0%, rgba(50,137,95,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005b3d', endColorstr='#32895f', GradientType=1 );
 }
 .dropdown-menu.right > li.dropdown-submenu > .dropdown-menu {
 
@@ -1269,7 +1270,7 @@ li.dropdown-submenu > .dropdown-menu {
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color: #FFFFFF;
+    color: #000000;
     white-space: nowrap;
     position: relative;
 }
@@ -1277,13 +1278,16 @@ li.dropdown-submenu > .dropdown-menu {
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
     text-decoration: none;
     background: transparent;
-    color: #ffc000;
+    color: #ed3338;
+}
+.dropdown-menu>li>a:hover .menu_square {
+    background: #ed3338;
 }
 .menu_square {
     float: left;
     height: 8px;
     width: 8px;
-    background: #FFFFFF;
+    background: #000000;
     margin-top: 6px;
     margin-right: 10px;
 }
@@ -1502,6 +1506,11 @@ a.link_investor_p:hover .icon_investor_p {
 .contact_confirm {
     max-width: 60%;
     margin: auto;
+}
+.slider {
+    position: relative;
+    top: 0;
+    border-bottom: 2px solid #C7C7C7;
 }
 .slider img {
     width: 100%;
@@ -1810,4 +1819,29 @@ marquee a {
 .video_title {
     font-weight: bold;
     text-transform: uppercase;
+}
+.partner_thumb li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.double-thumb {
+    background: #FFFFFF;
+    margin: 5px;
+    border: 1px solid #f4f4f4;
+    cursor: pointer;
+}
+.partner_thumb li .double-thumb img {
+    opacity: 1;
+}
+.partner_thumb li .double-thumb.active,
+.partner_thumb li .double-thumb:hover {
+    background: #ebebeb;
+}
+.partner_thumb li .double-thumb.active img,
+.partner_thumb li .double-thumb:hover img {
+    opacity: 0.8;
+}
+.contact_map {
+    margin-top: 50px;
 }
