@@ -916,7 +916,7 @@
         thumbsOnMarginTop: 20,
         thumbsWrapperMarginTop: 20,
         showAllControllers: !0,
-        showNavArrows: !1,
+        showNavArrows: !0,
         showOnInitNavArrows: !0,
         autoHideNavArrows: !0,
         showBottomNav: !0,
